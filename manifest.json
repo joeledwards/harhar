@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "HAR HAR",
+  "description": "HTTP Archive (HAR) Generator.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "record_button.png",
+    "default_popup": "popup.html",
+    "default_title": "HAR Generator"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

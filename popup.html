@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HAR HAR</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        background-color: black;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+
+      .links {
+          padding-bottom: 5px;
+      }
+      .links a, .links a:visited {
+          color: white;
+      }
+      .links a:hover {
+          color: lightgrey;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body style="width: 15em; ">
+    <div id="har-spec" class="links">
+      <a href="http://www.softwareishard.com/blog/har-12-spec/" target="_blank">HAR Spec 1.2</a>
+    </div>
+
+    <div id="har-viewer" class="links">
+      <a href="http://www.softwareishard.com/har/viewer/" target="_blank">HAR Viewer</a>
+    </div>
+  </body>
+</html>
+
